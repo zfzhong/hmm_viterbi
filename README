@@ -1,0 +1,24 @@
+# Hidden Markov Model Implementation
+The implementation of HMM correctly predicts 71.5% of the states. To quickly view the result, type:
+    `make`
+
+# To check the details of each python file:
+1. run gen_trans_matrix.py to generate a transition matrix:
+   `python3 gen_trans_matrix.py <grid.dat> <xxx_train.dat>`
+   please redirect the output into a file.
+
+2. run gen_emit_matrix.py to generate an emission matrix:
+   `python3 gen_emit_matrix.py <grid.dat> <xxx_train.dat>`
+   please redirect the output into a file.
+
+3. run hmm_viterbi_test.py to generate predications 
+   `python3 hmm_viterbi_test.py <num_states> <init_prob_file> <tm_matrix_file> <em_matrix_file> <testfile>`
+    please redirect output into a file.
+
+4. run compare_result.py to compare the predicted result and the original result
+   `python3 compare_result.py <test_file> <predict_file>`
+
+5. there are several small test data file for testing purposes:
+    test1.dat test2.dat test3.dat
+
+    they are generated purely for verifying the correctness of the algorithm implementation.
