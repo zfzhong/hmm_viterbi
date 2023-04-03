@@ -2,7 +2,7 @@
 The implementation of HMM correctly predicts 71.5% of the states. To quickly view the result, type:
     `make`
 
-# To check the details of each python file:
+## To check the details of each python file:
 1. run gen_trans_matrix.py to generate a transition matrix:
    `python3 gen_trans_matrix.py <grid.dat> <xxx_train.dat>`
    please redirect the output into a file.
@@ -22,3 +22,7 @@ The implementation of HMM correctly predicts 71.5% of the states. To quickly vie
     test1.dat test2.dat test3.dat
 
     they are generated purely for verifying the correctness of the algorithm implementation.
+
+## References
+For details about HMM, please refer to the following link:
+https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/pages/lecture-notes/
